@@ -12,5 +12,5 @@ maintainers:
     email: faizi@example.com
 dependencies:
   - name: mariadb
-    version: "0.8.0"
+    version: "0.8.1"
     repository: "oci://registry-1.docker.io/cloudpirates" 

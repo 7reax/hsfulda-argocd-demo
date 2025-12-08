@@ -54,7 +54,7 @@ mariadb:
   # Use the Bitnami MySQL chart
   enabled: true
   # Initialize database with our SQL script
-  initdbScriptsConfigMap: "mariadb-init-sql" 
+  initdbScriptsConfigMap: "{{ .Release.Name }}-init-sql"
   auth:
     rootPassword: rootpassword
     database: calendarDB

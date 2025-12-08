@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: mariadb-init-sql
+  name: {{ .Release.Name }}-init-sql
   labels:
     {{- include "calendar-app.labels" . | nindent 4 }}
   annotations:
